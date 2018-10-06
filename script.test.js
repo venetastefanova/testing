@@ -16,7 +16,7 @@ it('this is a test', ()=>{
 it('it is searching google', ()=>{
    
 expect(googleSearch("testtest", dbMock)).toEqual([]);
-expect(googleSearch("dog", dbMock)).toEqual(['dog.com']);
+expect(googleSearch("dog", dbMock)).toEqual([]);
 
 })
 
