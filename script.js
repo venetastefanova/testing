@@ -8,7 +8,7 @@ const googleDatabase = [
 ];
 
 
-const googleSearch=(searchinput)=>{
+const googleSearch=(searchinput, db)=>{ // accepts whatever database
     const matches = googleDatabase.filter(website=>{
         return website.includes(searchinput);
     })
@@ -16,3 +16,5 @@ const googleSearch=(searchinput)=>{
 }
 
 console.log(googleSearch('cats'));
+
+module.exports= googleSearch;
